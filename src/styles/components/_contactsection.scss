@@ -1,0 +1,184 @@
+#contact {
+    background-color: #040729;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 10px 0;
+
+    .container {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+        @include screen-control(950px) {
+            width: 90%;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 90px;
+
+            @include screen-control(950px) {
+                justify-content: center;
+                align-items: center;
+            }
+
+            @include screen-control(515px) {
+                gap: 65px;
+            }
+
+            @include screen-control(485px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .fts-address-email-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @include screen-control(485px) {
+                    display: none;
+                }
+    
+                .address {
+    
+                    .fts-name {
+                        font-weight: 700;
+                    }
+            
+                    p {
+                        color: $primary-font-color;
+                        margin: 5px 0;
+                    }
+    
+                }
+    
+                .email {
+    
+                    a {
+                        all: unset;
+    
+                        button {
+                            border: none;
+                            width: 180px;
+                            height: 40px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            background-color: #00bbdd;
+                            color: black;
+                        }
+                    }
+                }
+    
+            }
+
+            .fts-social-container {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                @include screen-control(1258px) {
+                    gap: 5px;
+                }
+
+                @include screen-control(1121px) {
+                    gap: 0;
+                }
+
+                @include screen-control(485px) {
+                    width: 90%;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                img {
+                    width: 200px;
+                    position: relative;
+                    left: -10px;
+                }
+
+                p {
+                    margin-top: 5px;
+
+                    @include screen-control(1121px) {
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                    }
+
+                    @include screen-control(950px) {
+                        font-size: 16px;
+                        margin: 25px auto;
+                    }
+
+                    @include screen-control(677px) {
+                        margin: 17px auto;
+                    }
+
+                    @include screen-control(547px) {
+                        margin: 7px auto;
+                    }
+
+                    @include screen-control(485px) {
+                        margin: 17px auto;
+                    }
+
+                }
+
+                .icon-container {
+
+                    a {
+                        all: unset;
+                    }
+
+                    .mail {
+                        display: none;
+
+                        @include screen-control(485px) {
+                            display: block;
+                        }
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    cursor: pointer;
+                }                
+            }
+
+        }
+
+        .fts-google-map-container {
+
+            @include screen-control(950px) {
+                display: none;
+            }
+        }
+
+    }
+
+    .creator-description {
+        width: 85%;
+        text-align: end;
+        font-size: 14px;
+
+        a {
+            text-decoration: none;
+            color: #00bbdd;
+        }
+
+        span {
+            color: #00bbdd;
+            cursor: pointer;
+        }
+
+        @include screen-control(485px) {
+            text-align: center;
+        }
+    }
+
+}

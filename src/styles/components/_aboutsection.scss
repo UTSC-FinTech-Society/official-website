@@ -1,0 +1,104 @@
+.about-section-container {
+    background-color: #040729;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .white-board {
+        position: relative;
+        z-index: 10;
+        width: 90%;
+        background-color: $primary-font-color;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 0;
+        margin-bottom: 80px;
+
+        @include screen-control(400px) {
+            padding: 90px 0;
+        }
+
+        .about-us-container {
+            width: 60%;
+
+            @include screen-control(710px) {
+                width: 80%;
+            }
+
+            @include screen-control(500px) {
+                width: 90%;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 400;
+                color: $primary-bg-color;
+                margin-top: 0;
+
+                @include screen-control(400px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 19px;
+                line-height: 30px;
+                color: rgb(150, 150, 150);
+
+                @include screen-control(900px) {
+                    font-size: Max(2vw, 16px);
+                }
+            }
+        }
+
+        .join-us-container {
+            margin-top: 90px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include screen-control(710px) {
+                width: 80%;
+            }
+
+            @include screen-control(500px) {
+                width: 90%;
+            }
+
+            @include screen-control(400px) {
+                margin-top: 50px;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 40px;
+                color: $primary-bg-color;
+                font-weight: 400;
+
+                @include screen-control(400px) {
+                    font-size: 30px;
+                }
+            }
+
+            button {
+                width: 120px;
+                height: 50px;
+                font-size: 18px;
+                border: none;
+                background-color: #00bbdd;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                color: $primary-font-color;
+                cursor: pointer;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
