@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import BackgroundSection from '../components/BackgroundSection';
+import NewsSection from '../components/NewsSection';
 import ContactSection from '../components/ContactSection';
+import BuildingBackground from "../assets/background/building-background.jpg";
 
 const News: React.FC = () => {
 
@@ -10,7 +12,8 @@ const News: React.FC = () => {
     return (
         <div className='news-page-container'>
             <NavBar />
-            <BackgroundSection />
+            <BackgroundSection descriptions={['Weekly Market Reviews', '& News Updates']} bgImage={BuildingBackground} />
+            <NewsSection />
             <ContactSection />
         </div>
     )

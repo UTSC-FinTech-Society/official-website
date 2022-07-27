@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from 'react-router-dom';
 import Logo from "../assets/utsc-fts-logo.png";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+const Fade = require('react-reveal/Fade');
 
 const NavBar: React.FC = () => {
 
@@ -65,16 +66,18 @@ const NavBar: React.FC = () => {
                 <div className="mobile-menu-btn" onClick={onClick}></div>
             </div>
             <div className="mobile-menu-container">
-                <div className="mobile-nav-btn-container">
-                    <Link to='/' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn about' onClick={onClick} >About</h3></Link>
-                    <Link to='/team' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn team' onClick={onClick} >Team</h3></Link>
-                    <Link to='/events' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn events' onClick={onClick} >Events</h3></Link>
-                    <Link to='/news' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn news' onClick={onClick} >News</h3></Link>
-                    <h3 className='mobile-nav-btn contact' onClick={(e: React.MouseEvent<HTMLDivElement>) => {
-                        window.scrollTo(0, document.body.scrollHeight);
-                        onClick(e);
-                        }} >Contact</h3>
-                </div>
+                <Fade bottom cascade>
+                    <div className="mobile-nav-btn-container">
+                        <Link to='/' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn about' onClick={onClick} >About</h3></Link>
+                        <Link to='/team' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn team' onClick={onClick} >Team</h3></Link>
+                        <Link to='/events' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn events' onClick={onClick} >Events</h3></Link>
+                        <Link to='/news' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn news' onClick={onClick} >News</h3></Link>
+                        <h3 className='mobile-nav-btn contact' onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+                            window.scrollTo(0, document.body.scrollHeight);
+                            onClick(e);
+                            }} >Contact</h3>
+                    </div>
+                </Fade>
             </div>
             <div className="social-icon-container">
                 <div className="icon-container">

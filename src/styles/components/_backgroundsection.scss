@@ -17,17 +17,17 @@
         font-weight: 400;
         margin: 5px;
 
-        @include screen-control(650px) {
-            font-size: Max(6.9vw, 25px);
+        @include screen-control(700px) {
+            font-size: Max(6.5vw, 25px);
         }
     }
 
-    .description:nth-child(2) {
+    .description:last-child {
         color: $primary-bg-color;
         font-size: 50px;
 
-        @include screen-control(650px) {
-            font-size: Max(7.69vw, 30px);
+        @include screen-control(700px) {
+            font-size: Max(7.15vw, 30px);
         }
     }
 }
