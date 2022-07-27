@@ -80,11 +80,13 @@ const NavBar: React.FC = () => {
                 </Fade>
             </div>
             <div className="social-icon-container">
-                <div className="icon-container">
-                    <a href='https://www.instagram.com/utscfintech/' target='_blank'><FaInstagram size='35px' /></a>
-                    <a href='https://www.linkedin.com/company/utscfts' target='_blank'><FaLinkedin size='35px' /></a>
-                    <a href='https://github.com/UTSC-FinTech-Society' target='_blank'><FaGithub size='35px' /></a>
-                </div>
+                <Fade bottom cascade>
+                    <div className="icon-container">
+                        <a href='https://www.instagram.com/utscfintech/' target='_blank'><FaInstagram size='35px' /></a>
+                        <a href='https://www.linkedin.com/company/utscfts' target='_blank'><FaLinkedin size='35px' /></a>
+                        <a href='https://github.com/UTSC-FinTech-Society' target='_blank'><FaGithub size='35px' /></a>
+                    </div>
+                </Fade>
             </div>
         </nav>
     )
