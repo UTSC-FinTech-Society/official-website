@@ -1,0 +1,73 @@
+.team-group-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+    @include screen-control(400px) {
+        gap: 30px;
+    }
+
+    @include screen-control(1123px) {
+        width: 100%;
+    }
+
+    @include screen-control(470px) {
+        width: 90%;
+    }
+
+    .team-name {
+        position: relative;
+        color: $primary-bg-color;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+            background-color: $tertiary-bg-color;
+        }
+
+        @include screen-control(550px) {
+            font-size: 30px;
+        }
+    }
+
+    .executive-card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+
+        @include screen-control(1011px) {
+            row-gap: 25px;
+        }
+
+        @include screen-control(730px) {
+            gap: 6vw;
+        }
+
+        @include screen-control(667px) {
+            gap: 20px 5px;
+        }
+
+        @include screen-control(600px) {
+            column-gap: 40px;
+        }
+
+        @include screen-control(400px) {
+            gap: 20px;
+        }
+
+        @import '../components/executivecard';
+    }
+}

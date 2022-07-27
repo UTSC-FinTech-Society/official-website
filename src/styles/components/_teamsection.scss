@@ -1,0 +1,31 @@
+.team-section-container {
+    background-color: $quaternary-bg-color;
+    display: flex;
+    justify-content: center;
+
+    .white-board {
+        position: relative;
+        z-index: 10;
+        width: 90%;
+        height: calc(100% + 50px);
+        top: -50px;
+        background-color: $primary-font-color;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 120px 0;
+
+        @include screen-control(550px) {
+            padding: 90px 0;
+        }
+
+        @include screen-control(450px) {
+            gap: 25px;
+        }
+
+        @import '../components/teamgroup';
+    }
+}

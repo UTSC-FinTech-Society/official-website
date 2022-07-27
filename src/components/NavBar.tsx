@@ -10,10 +10,10 @@ const NavBar: React.FC = () => {
     const navbarRef = useRef<HTMLDivElement>(null);
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 115 && navbarRef.current && !openMenuMode) {
+        if (window.scrollY > 70 && navbarRef.current && !openMenuMode) {
             navbarRef.current.style.backgroundColor = '#040C43';
             navbarRef.current.style.height = '80px';
-        } else if (window.scrollY <= 115 && navbarRef.current && !openMenuMode) {
+        } else if (window.scrollY <= 70 && navbarRef.current && !openMenuMode) {
             navbarRef.current.style.backgroundColor = 'transparent';
             navbarRef.current.style.height = '100px';
         } else if (openMenuMode && navbarRef.current) {
@@ -31,10 +31,10 @@ const NavBar: React.FC = () => {
             } else {
                 navbarRef.current.classList.remove('open-menu');
                 
-                if (window.scrollY > 115) {
+                if (window.scrollY > 70) {
                     navbarRef.current.style.backgroundColor = '#040C43';
                     navbarRef.current.style.height = '80px';
-                } else if (window.scrollY <= 115) {
+                } else if (window.scrollY <= 70) {
                     navbarRef.current.style.backgroundColor = 'transparent';
                     navbarRef.current.style.height = '100px';
                 }

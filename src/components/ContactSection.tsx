@@ -3,9 +3,9 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Logo from "../assets/utsc-fts-logo.png";
 
-const ContactSection = () => {
+const ContactSection: React.FC = () => {
   return (
-    <section id='contact'>
+    <section className='contact-section-container'>
         <div className="container">
             <div className="contact-container">
                 <div className="fts-address-email-container">

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import TechnologyAnimation from "../assets/technology-animation.gif";
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
     const whiteBoardRef = useRef<HTMLDivElement>(null);
 
     window.addEventListener('scroll', () => {
