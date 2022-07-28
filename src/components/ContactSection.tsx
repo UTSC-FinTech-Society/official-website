@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => {
                     </div>
                 </div>
                 <div className="fts-social-container">
-                    <img src={Logo} alt="UTSC FTS Logo" />
+                <img src={Logo} alt="UTSC FTS Logo" />
                     <p className='description'>Follow us on our social media to stay updated on our upcoming news and events!!</p>
                     <div className="icon-container">
                         <a href='mailto:utsc.fts@gmail.com' target='_blank' className='mail' ><MdOutlineEmail size='35px' /></a>
