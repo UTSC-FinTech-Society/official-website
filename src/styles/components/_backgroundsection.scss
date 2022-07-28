@@ -28,7 +28,7 @@
         }
 
         @include screen-height-control(630px) {
-            font-size: Max(5.7vh, 25px);
+            font-size: Max(3.96vh, 25px);
         }
 
         @keyframes fadeIn {
@@ -49,7 +49,7 @@
         }
 
         @include screen-height-control(630px) {
-            font-size: Max(6.4vh, 30px);
+            font-size: Max(4.76vh, 30px);
         }
     }
 

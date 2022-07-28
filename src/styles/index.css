@@ -872,7 +872,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .team-page-container .background-section-container .description {
-    font-size: max(5.7vh, 25px);
+    font-size: max(3.96vh, 25px);
   }
 }
 @-webkit-keyframes fadeIn {
@@ -902,7 +902,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .team-page-container .background-section-container .description:last-child {
-    font-size: max(6.4vh, 30px);
+    font-size: max(4.76vh, 30px);
   }
 }
 .container .team-page-container .team-section-container {
@@ -1532,7 +1532,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .events-page-container .background-section-container .description {
-    font-size: max(5.7vh, 25px);
+    font-size: max(3.96vh, 25px);
   }
 }
 @keyframes fadeIn {
@@ -1554,7 +1554,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .events-page-container .background-section-container .description:last-child {
-    font-size: max(6.4vh, 30px);
+    font-size: max(4.76vh, 30px);
   }
 }
 .container .events-page-container .events-section-container {
@@ -2051,7 +2051,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .news-page-container .background-section-container .description {
-    font-size: max(5.7vh, 25px);
+    font-size: max(3.96vh, 25px);
   }
 }
 @keyframes fadeIn {
@@ -2073,7 +2073,7 @@ body {
 }
 @media (max-height: 630px) {
   .container .news-page-container .background-section-container .description:last-child {
-    font-size: max(6.4vh, 30px);
+    font-size: max(4.76vh, 30px);
   }
 }
 .container .news-page-container .news-section-container {
