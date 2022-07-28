@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+const Fade = require('react-reveal/Fade');
 
 const EventsSection = () => {
     const whiteBoardRef = useRef<HTMLDivElement>(null);
@@ -12,7 +13,9 @@ const EventsSection = () => {
     return (
         <section className='events-section-container'>
             <div className="white-board" ref={whiteBoardRef} >
-                <h3 className='coming-soon-text'>Coming Soon...</h3>
+                <Fade bottom>
+                    <h3 className='coming-soon-text'>Coming Soon...</h3>
+                </Fade>
             </div>
         </section>
     );

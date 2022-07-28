@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import BackgroundSection from '../components/BackgroundSection';
 import NewsSection from '../components/NewsSection';
 import ContactSection from '../components/ContactSection';
-import BuildingBackground from "../assets/background/building-background.jpg";
+import BuildingBackground from "../assets/background/building-background2.jpeg";
 
 const News: React.FC = () => {
 
@@ -12,7 +12,7 @@ const News: React.FC = () => {
     return (
         <div className='news-page-container'>
             <NavBar />
-            <BackgroundSection descriptions={['Weekly Market Reviews', '& News Updates']} bgImage={BuildingBackground} />
+            <BackgroundSection descriptions={[{ text: 'Weekly Market Reviews', color: '#f1f1f1', textShadow: '#040C43 1px 0 20px' }, { text: '& News Updates', color: '#f1f1f1', textShadow: '#040C43 1px 0 20px' }]} bgImage={`linear-gradient(rgba(50,50,50,.5), rgba(50,50,50,.5)), url(${BuildingBackground})`} bgSize='100vw 70vh' />
             <NewsSection />
             <ContactSection />
         </div>

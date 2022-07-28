@@ -1,7 +1,6 @@
 .background-section-container {
     height: 50vh;
     background-repeat: no-repeat;
-    background-size: 100vw 60vh;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -16,9 +15,19 @@
         font-size: 45px;
         font-weight: 400;
         margin: 5px;
+        text-align: center;
+        animation: fadeIn 0.35s ease-in-out;
 
         @include screen-control(700px) {
             font-size: Max(6.5vw, 25px);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            } 100% {
+                opacity: 1;
+            }
         }
     }
 
@@ -30,4 +39,5 @@
             font-size: Max(7.15vw, 30px);
         }
     }
+
 }

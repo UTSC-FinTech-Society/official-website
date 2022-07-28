@@ -3,6 +3,9 @@
     display: flex;
     justify-content: center;
     height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
 
     .white-board {
         position: relative;

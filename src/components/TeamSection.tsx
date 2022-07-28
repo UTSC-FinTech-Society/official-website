@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import ExecutiveCard from './ExecutiveCard';
 import TeamGroup from './TeamGroup';
-import KatelynTam from '../assets/team/katelyn-tam.jpg';
-import QueenieWong from "../assets/team/queenie-wong.jpg";
-import CassieXu from "../assets/team/cassie-xu.jpg";
+import KatelynTam from '../assets/team/katelyn-tam.png';
+import QueenieWong from "../assets/team/queenie-wong.png";
+import CassieXu from "../assets/team/cassie-xu.png";
 import EdisonLiem from '../assets/team/edison-liem.png';
 import DarrenCheng from "../assets/team/darren-cheng.jpg";
 import DionChi from "../assets/team/dion-chi.jpg";
@@ -25,7 +25,7 @@ const TeamSection: React.FC = () => {
                     <ExecutiveCard name='Queenie Wong' position='Co-President' profilePic={QueenieWong}  />
                 </TeamGroup>
                 <TeamGroup name='Vice Presidents' >
-                    <ExecutiveCard name='Cassie Xue' position='Vice President of Operations' profilePic={CassieXu}  />
+                    <ExecutiveCard name='Cassie Xu' position='Vice President of Operations' profilePic={CassieXu}  />
                     <ExecutiveCard name='Edison Liem' position='Vice President of Technology' profilePic={EdisonLiem}  />
                     <ExecutiveCard name='Darren Cheng' position='Vice President of External Affairs' profilePic={DarrenCheng}  />
                 </TeamGroup>
