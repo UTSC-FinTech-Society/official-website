@@ -7,13 +7,13 @@
     justify-content: center;
     align-items: center;
 
-    @include screen-control(915px) {
-        background-attachment: initial;
-    }
-
     @include screen-height-control(500px) {
         height: 60vh;
         background-size: 100vw 60vh;
+    }
+
+    @include screen-control(915px) {
+        background-attachment: initial;
     }
 
     .description {
@@ -27,7 +27,7 @@
             font-size: Max(6.5vw, 25px);
         }
 
-        @include screen-height-control(700px) {
+        @include screen-height-control(630px) {
             font-size: Max(5.7vh, 25px);
         }
 
@@ -48,7 +48,7 @@
             font-size: Max(7.15vw, 30px);
         }
 
-        @include screen-height-control(700px) {
+        @include screen-height-control(630px) {
             font-size: Max(6.4vh, 30px);
         }
     }

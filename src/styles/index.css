@@ -846,15 +846,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 915px) {
-  .container .team-page-container .background-section-container {
-    background-attachment: initial;
-  }
-}
 @media (max-height: 500px) {
   .container .team-page-container .background-section-container {
     height: 60vh;
     background-size: 100vw 60vh;
+  }
+}
+@media (max-width: 915px) {
+  .container .team-page-container .background-section-container {
+    background-attachment: initial;
   }
 }
 .container .team-page-container .background-section-container .description {
@@ -870,7 +870,7 @@ body {
     font-size: max(6.5vw, 25px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .team-page-container .background-section-container .description {
     font-size: max(5.7vh, 25px);
   }
@@ -900,7 +900,7 @@ body {
     font-size: max(7.15vw, 30px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .team-page-container .background-section-container .description:last-child {
     font-size: max(6.4vh, 30px);
   }
@@ -1506,15 +1506,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 915px) {
-  .container .events-page-container .background-section-container {
-    background-attachment: initial;
-  }
-}
 @media (max-height: 500px) {
   .container .events-page-container .background-section-container {
     height: 60vh;
     background-size: 100vw 60vh;
+  }
+}
+@media (max-width: 915px) {
+  .container .events-page-container .background-section-container {
+    background-attachment: initial;
   }
 }
 .container .events-page-container .background-section-container .description {
@@ -1530,7 +1530,7 @@ body {
     font-size: max(6.5vw, 25px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .events-page-container .background-section-container .description {
     font-size: max(5.7vh, 25px);
   }
@@ -1552,7 +1552,7 @@ body {
     font-size: max(7.15vw, 30px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .events-page-container .background-section-container .description:last-child {
     font-size: max(6.4vh, 30px);
   }
@@ -2025,15 +2025,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 915px) {
-  .container .news-page-container .background-section-container {
-    background-attachment: initial;
-  }
-}
 @media (max-height: 500px) {
   .container .news-page-container .background-section-container {
     height: 60vh;
     background-size: 100vw 60vh;
+  }
+}
+@media (max-width: 915px) {
+  .container .news-page-container .background-section-container {
+    background-attachment: initial;
   }
 }
 .container .news-page-container .background-section-container .description {
@@ -2049,7 +2049,7 @@ body {
     font-size: max(6.5vw, 25px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .news-page-container .background-section-container .description {
     font-size: max(5.7vh, 25px);
   }
@@ -2071,7 +2071,7 @@ body {
     font-size: max(7.15vw, 30px);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 630px) {
   .container .news-page-container .background-section-container .description:last-child {
     font-size: max(6.4vh, 30px);
   }
