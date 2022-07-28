@@ -27,6 +27,11 @@ nav {
             padding: 0 40px 0 15px;
         }
 
+        @include screen-height-control(450px) {
+            justify-content: space-between;
+            padding: 0 50px 0 25px;
+        }
+
         img {
             width: 200px;
             margin-right: 10vw;
@@ -55,6 +60,10 @@ nav {
     
             @include screen-control(830px) {
                 gap: 20px;
+            }
+
+            @include screen-height-control(450px) {
+                display: none;
             }
     
             h3 {
@@ -114,6 +123,10 @@ nav {
             @include screen-control(650px) {
                 display: block;
             }
+
+            @include screen-height-control(450px) {
+                display: block;
+            }
         }
     }
 
@@ -125,6 +138,10 @@ nav {
             display: flex;
             flex-direction: column;
             gap: 15px;
+
+            @include screen-height-control(375px) {
+                gap: 10px;
+            }
 
             .about {
                 width: 100px;
@@ -180,6 +197,15 @@ nav {
         transition: all 0.5s ease-in-out;
         margin-bottom: 30px;
         width: 75%;
+
+        @include screen-height-control(450px) {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        @include screen-height-control(385px) {
+            margin-top: 20px;
+        }
 
         .icon-container {
             display: flex;

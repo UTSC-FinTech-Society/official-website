@@ -8,9 +8,8 @@
     align-items: center;
     text-align: center;
 
-    @include screen-control(640px) {
+    @include screen-control(915px) {
         background-attachment: initial;
-        background-size: auto 100%;
     }
 
     .hero-text-container {

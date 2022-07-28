@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin screen-height-control($height) {
+    @media (max-height: $height) {
+        @content;
+    }
+}

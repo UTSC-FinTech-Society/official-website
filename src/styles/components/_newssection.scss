@@ -26,12 +26,21 @@
             padding: 90px 0;
         }
 
+        @include screen-height-control(500px) {
+            padding: 90px 0;
+        }
+
         .coming-soon-text {
             color: $primary-bg-color;
             font-size: 40px;
             font-weight: 400;
 
             @include screen-control(550px) {
+                margin-top: 0;
+                font-size: 30px;
+            }
+
+            @include screen-height-control(550px) {
                 margin-top: 0;
                 font-size: 30px;
             }

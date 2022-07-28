@@ -39,6 +39,10 @@
         @include screen-control(550px) {
             font-size: 30px;
         }
+
+        @include screen-height-control(500px) {
+            font-size: 30px;
+        }
     }
 
     .executive-card-container {
