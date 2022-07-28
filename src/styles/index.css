@@ -8,10 +8,6 @@ body {
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Noto Serif", serif;
   color: #f1f1f1;

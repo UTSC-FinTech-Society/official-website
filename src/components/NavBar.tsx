@@ -57,22 +57,26 @@ const NavBar: React.FC = () => {
             <div className="nav-bar-container">
                 <img src={Logo} alt="UTSC FTS Logo" />
                 <div className="nav-btn-container">
-                    <Link to='/' style={{textDecoration:"none"}}><h3 className='nav-btn'>About</h3></Link>
-                    <Link to='/team' style={{textDecoration:"none"}}><h3 className='nav-btn'>Team</h3></Link>
-                    <Link to='/events' style={{textDecoration:"none"}}><h3 className='nav-btn'>Events</h3></Link>
-                    <Link to='/news' style={{textDecoration:"none"}}><h3 className='nav-btn'>News</h3></Link>
-                    <h3 className='nav-btn' onClick={() => window.scrollTo(0, document.body.scrollHeight)} >Contact</h3>
+                    <Link to='/' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>About</h3></Link>
+                    <Link to='/team' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>Team</h3></Link>
+                    <Link to='/events' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>Events</h3></Link>
+                    <Link to='/news' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>News</h3></Link>
+                    <h3 className='nav-btn' onClick={() => {
+                        document.body.parentElement!.style.scrollBehavior = 'smooth';
+                        window.scrollTo(0, document.body.scrollHeight);
+                    }} >Contact</h3>
                 </div>
                 <div className="mobile-menu-btn" onClick={onClick}></div>
             </div>
             <div className="mobile-menu-container">
                 <Fade bottom cascade>
                     <div className="mobile-nav-btn-container">
-                        <Link to='/' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn about' onClick={onClick} >About</h3></Link>
-                        <Link to='/team' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn team' onClick={onClick} >Team</h3></Link>
-                        <Link to='/events' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn events' onClick={onClick} >Events</h3></Link>
-                        <Link to='/news' style={{textDecoration:"none"}}><h3 className='mobile-nav-btn news' onClick={onClick} >News</h3></Link>
+                        <Link to='/' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='mobile-nav-btn about' onClick={onClick} >About</h3></Link>
+                        <Link to='/team' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='mobile-nav-btn team' onClick={onClick} >Team</h3></Link>
+                        <Link to='/events' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='mobile-nav-btn events' onClick={onClick} >Events</h3></Link>
+                        <Link to='/news' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='mobile-nav-btn news' onClick={onClick} >News</h3></Link>
                         <h3 className='mobile-nav-btn contact' onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+                            document.body.parentElement!.style.scrollBehavior = 'smooth';
                             window.scrollTo(0, document.body.scrollHeight);
                             onClick(e);
                             }} >Contact</h3>

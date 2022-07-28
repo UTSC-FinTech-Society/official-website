@@ -3,10 +3,6 @@
 @import "./abstracts/mixins";
 @import "./base/reset";
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Noto Serif', serif;
     color: $primary-font-color;
