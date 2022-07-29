@@ -8,6 +8,9 @@ import EdisonLiem from '../assets/team/edison-liem.png';
 import DarrenCheng from "../assets/team/darren-cheng.jpg";
 import DionChi from "../assets/team/dion-chi.jpg";
 import GloriaWu from "../assets/team/gloria-wu.jpeg";
+import JekyllChen from "../assets/team/jekyll-chen.jpeg";
+import RyanMok from "../assets/team/ryan-mok.jpeg";
+import AdrianaWong from "../assets/team/adriana-wong.png";
 
 const TeamSection: React.FC = () => {
     const whiteBoardRef = useRef<HTMLDivElement>(null);
@@ -33,9 +36,9 @@ const TeamSection: React.FC = () => {
                 <TeamGroup name='Directors' >
                     <ExecutiveCard name='Dion Chi' position='Director of Operations' profilePic={DionChi}  />
                     <ExecutiveCard name='Gloria Wu' position='Director of Finance' profilePic={GloriaWu}  />
-                    <ExecutiveCard name='Jekyll Chen' position='Director of Marketing' profilePic={DarrenCheng}  />
-                    <ExecutiveCard name='Ryan Mok' position='Director of External Affairs' profilePic={EdisonLiem}  />
-                    <ExecutiveCard name='Adriana Wong' position='Director of External Affairs' profilePic={DarrenCheng}  />
+                    <ExecutiveCard name='Jekyll Chen' position='Director of Marketing' profilePic={JekyllChen}  />
+                    <ExecutiveCard name='Ryan Mok' position='Director of External Affairs' profilePic={RyanMok}  />
+                    <ExecutiveCard name='Adriana Wong' position='Director of External Affairs' profilePic={AdrianaWong}  />
                 </TeamGroup>
             </div>
        </section>
