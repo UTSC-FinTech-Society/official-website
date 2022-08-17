@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from "../assets/utsc-fts-logo.png";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 const Fade = require('react-reveal/Fade');
 
 const NavBar: React.FC = () => {
+
+    const navigate = useNavigate();
 
     const [openMenuMode, setOpenMenuMode] = useState<boolean>(false);
 
@@ -55,7 +57,7 @@ const NavBar: React.FC = () => {
     return (
         <nav ref={navbarRef}>
             <div className="nav-bar-container">
-                <img src={Logo} alt="UTSC FTS Logo" />
+                <img src={Logo} alt="UTSC FTS Logo" onClick={() => navigate('/')} />
                 <div className="nav-btn-container">
                     <Link to='/' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>About</h3></Link>
                     <Link to='/team' style={{textDecoration:"none"}} onClick={() => document.body.parentElement!.style.scrollBehavior = 'auto'} ><h3 className='nav-btn'>Team</h3></Link>

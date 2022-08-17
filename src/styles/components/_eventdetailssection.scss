@@ -1,0 +1,288 @@
+.event-details-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030112;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 170px 0;
+    position: relative;
+
+    @import './loading';
+
+    .particles {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .event-details-container {
+        display: flex;
+
+        .poster-container {
+            position: relative;
+            left: 50px;
+
+            @include screen-control(840px) {
+                left: 70px;
+            }
+
+            @include screen-control(600px) {
+                left: 110px;
+            }
+
+            @include screen-control(500px) {
+                left: 135px;
+            }
+
+            @include screen-control(400px) {
+                left: 110px;
+            }
+
+            @include screen-control(350px) {
+                left: Max(31vw, 20px);
+            }
+
+            img {
+                width: 600px;
+                height: 600px;
+                object-fit: cover;
+
+                @include screen-control(1300px) {
+                    width: 550px;
+                    height: 550px;
+                }
+
+                @include screen-control(1230px) {
+                    width: 500px;
+                    height: 500px;
+                }
+
+                @include screen-control(1050px) {
+                    width: 450px;
+                    height: 450px;
+                }
+
+                @include screen-control(900px) {
+                    width: 400px;
+                    height: 400px;
+                }
+
+                @include screen-control(800px) {
+                    width: 350px;
+                    height: 350px;
+                }
+
+                @include screen-control(700px) {
+                    width: 320px;
+                    height: 320px;
+                }
+
+                @include screen-control(450px) {
+                    width: 280px;
+                    height: 280px;
+                }
+
+                @include screen-control(400px) {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                @include screen-control(350px) {
+                    width: 71vw;
+                    height: 71vw;
+                }
+            }
+
+        }
+
+        .details-container {
+            width: 45.7vw;
+            height: 580px;
+            background-color: white;
+            padding: 50px 80px;
+            position: relative;
+            left: -70px;
+            top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            @include screen-control(1250px) {
+                padding: 50px 50px;
+            }
+
+            @include screen-control(1000px) {
+                padding: 30px 30px;
+                height: 520px;
+            }
+
+            @include screen-control(840px) {
+                width: 420px;
+
+            }
+            
+            @include screen-control(800px) {
+                height: 470px;
+                left: -50px;
+                top: 110px;
+                margin-bottom: 50px;
+            }
+
+            @include screen-control(750px) {
+                width: 390px;
+            }
+
+            @include screen-control(700px) {
+                width: 350px;
+                top: 150px;
+                margin-bottom: 70px;
+            }
+
+            @include screen-control(650px) {
+                width: 320px;
+            }
+
+            @include screen-control(630px) {
+                width: 320px;
+                top: 180px;
+                left: -70px;
+                margin-bottom: 100px;
+            }
+
+            @include screen-control(600px) {
+                top: 200px;
+                gap: 10px;
+            }
+
+            @include screen-control(550px) {
+                width: 320px;
+                top: 230px;
+                left: -120px;
+                height: 420px;
+                margin-bottom: 140px;
+            }
+
+            @include screen-control(500px) {
+                left: -135px;
+            }
+
+            @include screen-control(450px) {
+                width: 280px;
+                left: -115px;
+                height: 380px;
+            }
+
+            @include screen-control(400px) {
+                width: 240px;
+                left: -100px;
+                height: 340px;
+                top: 200px;
+                padding: 30px 20px;
+            }
+
+            @include screen-control(350px) {
+                width: 68.5vw;
+                left: Min(-28.5vw, 0);
+                height: auto;
+                top: Max(57vw, 50px);
+                margin-bottom: 33vw;
+            }
+
+            .name {
+                text-align: center;
+                color: black;
+                margin: 0 auto;
+                font-size: Max(2.2vw, 23px);
+
+                @include screen-control(800px) {
+                    font-size: 22px;
+                }
+
+                @include screen-control(700px) {
+                    font-size: 21px;
+                }
+
+                @include screen-control(630px) {
+                    font-size: 20px;
+                }
+
+                @include screen-control(450px) {
+                    font-size: 18.5px;
+                }
+
+                @include screen-control(400px) {
+                    font-size: 17px;
+                }
+
+                @include screen-control(350px) {
+                    font-size: 4.85vw;
+                }
+            }
+
+            .description {
+                color: #636363;
+                font-size: 14px;
+
+                @include screen-control(900px) {
+                    font-size: 13px;
+                }
+
+                @include screen-control(750px) {
+                    font-size: 12px;
+                }
+
+                @include screen-control(550px) {
+                    font-size: 11px;
+                }
+
+                @include screen-control(450px) {
+                    font-size: 10px;
+                }
+
+                @include screen-control(350px) {
+                    font-size: 2.85vw;
+                }
+            }
+
+            .metadata-container {
+
+                .entry-fee {
+
+                    @include screen-control(450px) {
+                        margin-top: 0;
+                    }
+                }
+
+                p {
+                    color: #636363;
+                    font-size: 14px;
+
+                    @include screen-control(900px) {
+                        font-size: 13px;
+                    }
+
+                    @include screen-control(750px) {
+                        font-size: 12px;
+                    }
+
+                    @include screen-control(550px) {
+                        font-size: 11px;
+                    }
+
+                    @include screen-control(450px) {
+                        font-size: 10px;
+                    }
+
+                    @include screen-control(350px) {
+                        font-size: 2.85vw;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
 version: '3.8'
 services:
-  fts-official-website-container:
+  frontend:
     image: fts-official-website
     build: ./
     stdin_open: true
+    tty: true
     ports:
       - 3000:3000
+    volumes:
+      - ./:/usr/src/app

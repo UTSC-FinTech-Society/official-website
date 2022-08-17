@@ -2,48 +2,81 @@
     background-color: $quaternary-bg-color;
     display: flex;
     justify-content: center;
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100vw 100vh;
+    min-height: 70vh;
 
     .white-board {
         position: relative;
         z-index: 10;
         width: 90%;
-        height: calc(100% + 50px);
+        min-height: calc(100% + 50px);
         top: -50px;
         background-color: $primary-font-color;
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        padding: 120px 0;
 
-        @include screen-control(550px) {
-            padding: 90px 0;
-        }
+        .news-cards-list-container {
+            width: 100%;
+            height: 100%;
+            padding: 120px;
+            gap: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 
-        @include screen-height-control(500px) {
-            padding: 90px 0;
-        }
+            @include screen-control(1020px) {
+                padding: 120px 90px;
+            }
 
-        .coming-soon-text {
-            color: $primary-bg-color;
-            font-size: 40px;
-            font-weight: 400;
+            @include screen-control(945px) {
+                padding: 120px 60px;
+            }
+
+            @include screen-control(880px) {
+                gap: 50px 20px;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            @include screen-control(825px) {
+                padding: 120px 30px;
+            }
+
+            @include screen-control(755px) {
+                padding: 120px 10px;
+            }
 
             @include screen-control(550px) {
-                margin-top: 0;
-                font-size: 30px;
+                padding: 60px 0;
+            }
+    
+            @include screen-height-control(550px) {
+                padding: 60px;
             }
 
-            @include screen-height-control(550px) {
-                margin-top: 0;
-                font-size: 30px;
+            @include screen-height-control(500px) {
+                padding: 60px 0;
             }
+
+            @import './newscard';
+
+            .coming-soon-text {
+                justify-self: center;
+                color: $primary-bg-color;
+                font-size: 40px;
+                font-weight: 400;
+    
+                @include screen-control(550px) {
+                    margin-top: 0;
+                    font-size: 30px;
+                }
+    
+                @include screen-height-control(550px) {
+                    margin-top: 0;
+                    font-size: 30px;
+                }
+            }
+    
+            @import './loading';
+
         }
+
     }
 }
