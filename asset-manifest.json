@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/official-website/static/css/main.7b933647.css",
+    "main.js": "/official-website/static/js/main.61fa8f0e.js",
+    "static/media/trading-animation.gif": "/official-website/static/media/trading-animation.8d7d1ba0af3f82301cf9.gif",
+    "static/media/technology-animation.gif": "/official-website/static/media/technology-animation.ed7b65f4406f0db4f9d4.gif",
+    "static/media/building-background.jpg": "/official-website/static/media/building-background.b5f626b639366d6c3e14.jpg",
+    "static/media/hero-section-background.jpg": "/official-website/static/media/hero-section-background.d1d009c335265babedc2.jpg",
+    "static/media/edison-liem.png": "/official-website/static/media/edison-liem.0cc5f14d82f184096c6a.png",
+    "static/media/building-background2.jpeg": "/official-website/static/media/building-background2.8304e192946b9966a588.jpeg",
+    "static/media/building-background3.jpeg": "/official-website/static/media/building-background3.4c8fc018e76c70b1eaf6.jpeg",
+    "static/media/cassie-xu.png": "/official-website/static/media/cassie-xu.c8acd6ec61d86a14e534.png",
+    "static/media/katelyn-tam.png": "/official-website/static/media/katelyn-tam.e6aa7429335c12729728.png",
+    "static/media/adriana-wong.png": "/official-website/static/media/adriana-wong.4fb1f09fc623c6f55979.png",
+    "static/media/queenie-wong.png": "/official-website/static/media/queenie-wong.2d1fbda81e63d52ff792.png",
+    "static/media/ryan-mok.jpeg": "/official-website/static/media/ryan-mok.10cf7d2d6e8dad6c563e.jpeg",
+    "static/media/jekyll-chen.jpeg": "/official-website/static/media/jekyll-chen.171468a81ce598bc1472.jpeg",
+    "static/media/darren-cheng.jpg": "/official-website/static/media/darren-cheng.811dca319de927ac7c96.jpg",
+    "static/media/gloria-wu.jpeg": "/official-website/static/media/gloria-wu.bde04c51b72cd347ba2c.jpeg",
+    "static/media/utsc-fts-logo2.png": "/official-website/static/media/utsc-fts-logo2.05310801539441f48816.png",
+    "static/media/utsc-fts-logo.png": "/official-website/static/media/utsc-fts-logo.98284ce79c480671e30b.png",
+    "static/media/dion-chi.jpg": "/official-website/static/media/dion-chi.5e97a80cc1bcaeda54d1.jpg",
+    "index.html": "/official-website/index.html",
+    "main.7b933647.css.map": "/official-website/static/css/main.7b933647.css.map",
+    "main.61fa8f0e.js.map": "/official-website/static/js/main.61fa8f0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b933647.css",
+    "static/js/main.61fa8f0e.js"
+  ]
+}
