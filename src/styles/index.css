@@ -262,6 +262,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 0 40%;
   height: 100vh;
   display: flex;
   justify-content: center;
