@@ -64,7 +64,7 @@
                 font-weight: 400;
     
                 @include screen-control(550px) {
-                    margin-top: 0;
+                    margin-top: 30px;
                     font-size: 30px;
                 }
     
