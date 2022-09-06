@@ -37,7 +37,7 @@ const NewsCard = ({ news_id, title, content, picture_type, picture_data, author,
                             <img src={`data:${picture_type};base64, ${picture_data}`} alt={`News ${news_id} Picture`} />
                         </div>
                         <div className="description-container">
-                            <p className='metadata'>{`${formatDate(created_at)} · ${author}`}</p>
+                            <p className='metadata'>{`${formatDate(created_at)} · ${author.split(', ')[0]}`}</p>
                             <h3 className='title'>{title}</h3>
                             <button className="read-btn">
                                 <p>read</p>

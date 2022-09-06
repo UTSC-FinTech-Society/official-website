@@ -9,8 +9,8 @@
 
     @import "./loading";
 
-    @include screen-control(500px) {
-        padding: 150px 0 100px 0;
+    @include screen-control(600px) {
+        padding: 100px 0 0 0;
     }
 
     .particles {
@@ -41,54 +41,48 @@
             padding: 100px 60px 80px 60px;
         }
 
-        @include screen-control(750px) {
+        @include screen-control(800px) {
             width: 80vw;
             padding: 100px 60px 80px 60px;
         }
 
-        @include screen-control(670px) {
-            padding: 100px 40px 80px 40px;
+        @include screen-control(735px) {
+            width: 85vw;
         }
 
         @include screen-control(650px) {
-            width: 85vw;
             padding: 100px 50px 80px 50px;
         }
 
-        @include screen-control(550px) {
-            padding: 80px 30px 80px 30px;
+        @include screen-control(600px) {
+            width: 100%;
+            padding: 70px 50px;
         }
 
         @include screen-control(500px) {
-            width: 90%;
-            padding: 80px 40px 80px 40px;
+            padding: 70px 40px;
         }
 
         @include screen-control(450px) {
-            width: 95%;
-            padding: 70px 30px 70px 30px;
+            padding: 70px 30px;
         }
 
         .title {
-            font-size: Max(2.2vw, 23px);
+            font-size: Max(2.2vw, 25px);
             margin: 0 auto;
-            color: black;
+            color: #292929;
             text-align: center;
 
             @include screen-control(625px) {
                 font-size: 20px;
             }
 
-            @include screen-control(475px) {
-                font-size: 19px;
+            @include screen-control(600px) {
+                font-size: 23px;
             }
 
-            @include screen-control(455px) {
-                font-size: 18px;
-            }
-
-            @include screen-control(413px) {
-                font-size: 17px;
+            @include screen-control(500px) {
+                font-size: 20px;
             }
         }
 
@@ -97,18 +91,22 @@
             height: Max(28.5vw, 200px);
             margin-top: 55px;
 
-            @include screen-control(550px) {
+            @include screen-control(600px) {
+                height: 250px;
                 margin-top: 40px;
             }
 
             @include screen-control(500px) {
-                height: Max(40vw, 100px);
+                height: Max(44vw, 200px);
+            }
+
+            @include screen-control(400px) {
+                height: 190px;
             }
 
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
 
@@ -126,32 +124,25 @@
             }
 
             @include screen-control(600px) {
-                font-size: 10px;
-            }
-
-            @include screen-control(480px) {
-                font-size: 9px;
+                font-size: 13px;
             }
         }
 
         .content {
-            margin-top: 60px;
+            margin-top: 40px;
 
-            @include screen-control(840px) {
-                margin-top: 50px;
-            }
-
-            @include screen-control(550px) {
-                margin-top: 40px;
+            @include screen-control(600px) {
+                margin-top: 35px;
             }
 
             @include screen-control(430px) {
                 margin-top: 30px;
             }
 
-            p {
+            p, span, ol, ul {
                 font-size: 16px;
-                color: black;
+                line-height: 28px;
+                color: #292929;
 
                 @include screen-control(1200px) {
                     font-size: 15px;
@@ -161,16 +152,8 @@
                     font-size: 14px;
                 }
 
-                @include screen-control(650px) {
-                    font-size: 13px;
-                }
-
                 @include screen-control(600px) {
-                    font-size: 12px;
-                }
-
-                @include screen-control(480px) {
-                    font-size: 11px;
+                    font-size: 15px;
                 }
             }
         }
