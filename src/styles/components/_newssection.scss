@@ -18,9 +18,10 @@
             width: 100%;
             height: 100%;
             padding: 120px;
-            gap: 50px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
             @include screen-control(1020px) {
                 padding: 120px 90px;
@@ -32,7 +33,6 @@
 
             @include screen-control(880px) {
                 gap: 50px 20px;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             }
 
             @include screen-control(825px) {
@@ -46,7 +46,7 @@
             @include screen-control(550px) {
                 padding: 60px 0;
             }
-    
+
             @include screen-height-control(550px) {
                 padding: 60px;
             }
@@ -62,18 +62,18 @@
                 color: $primary-bg-color;
                 font-size: 40px;
                 font-weight: 400;
-    
+
                 @include screen-control(550px) {
                     margin-top: 30px;
                     font-size: 30px;
                 }
-    
+
                 @include screen-height-control(550px) {
                     margin-top: 0;
                     font-size: 30px;
                 }
             }
-    
+
             @import './loading';
 
         }

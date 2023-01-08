@@ -13,7 +13,7 @@ type Prop = {
     entry_fee?: number,
     location: string,
     poster_type: string,
-    poster_data: string, 
+    poster_data: string,
     signup_link?: string,
     created_at: Date,
     single_card?: boolean
@@ -53,7 +53,7 @@ const EventCard = ({ event_id, name, description, register_deadline, start_datet
         const end_month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][end_datetime.getUTCMonth()];
         const start_day = start_datetime.getUTCDate();
         const end_day = end_datetime.getUTCDate();
-        const start_hour = start_datetime.getUTCHours(); 
+        const start_hour = start_datetime.getUTCHours();
         const end_hour = end_datetime.getUTCHours();
         const start_min = start_datetime.getUTCMinutes();
         const end_min = end_datetime.getUTCMinutes();

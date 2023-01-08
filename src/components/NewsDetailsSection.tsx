@@ -27,7 +27,7 @@ const NewsDetailsSection = () => {
     };
 
     useEffect(() => {
-    
+
         if (newsList.length > 0) {
             const newsExist = newsList.find(news => news.news_id === news_id);
 
@@ -67,7 +67,7 @@ const NewsDetailsSection = () => {
                                 <img src={`data:${picture_type};base64, ${picture_data}`} alt={`News ${news_id} Picture`} />
                             </div>
                             <p className='metadata'>{`${author} | ${formatDate(created_at!)}`}</p>
-                            <div className='content' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content).replaceAll(/font-size:((.|\s)*?);/gim, '').replaceAll('color: rgb(99,99,99);', '').replace(/font-family:((.|\s)*?);/gim, '') }}  ></div>
+                            <div className='content' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content).replaceAll(/style="((.|\s)*?);"/gim, '') }}  ></div>
                         </div>
                     </Fade>
                 </>

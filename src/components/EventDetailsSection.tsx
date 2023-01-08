@@ -76,7 +76,7 @@ const EventDetailsSection = () => {
         const end_month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][end_datetime.getUTCMonth()];
         const start_day = start_datetime.getUTCDate();
         const end_day = end_datetime.getUTCDate();
-        const start_hour = start_datetime.getUTCHours(); 
+        const start_hour = start_datetime.getUTCHours();
         const end_hour = end_datetime.getUTCHours();
         const start_min = start_datetime.getUTCMinutes();
         const end_min = end_datetime.getUTCMinutes();
@@ -103,13 +103,13 @@ const EventDetailsSection = () => {
                         </div>
                         <div className="details-container">
                             <h3 className='name'>{name}</h3>
-                            <div className='description'  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description.replaceAll(/font-size:((.|\s)*?);/gim, '').replaceAll('color: rgb(99,99,99);', '').replaceAll('color: rgb(0,0,0);', '').replace(/font-family:((.|\s)*?);/gim, '')) }}></div>
+                            <div className='description'  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description.replaceAll(/style="((.|\s)*?);"/gim, '')) }}></div>
                             <div className="metadata-container">
                                 <p className='entry-fee'>Entry Fee: {entry_fee && entry_fee !== 0 ? `$${entry_fee}` :  'Free'}</p>
                                 <p className='register-deadline'>{`Sign Up Deadline: ${formatDate(register_deadline!)}`}</p>
                                 <p className='start-and-end-datetime'>{`Date: ${formatEventTimePeriod(start_datetime!, end_datetime!)}`}</p>
                                 <p className='location'>{`Location: ${location}`}</p>
-                                <p className='signup_link'>Sign Up Link: {signup_link && signup_link !== '' ? <a href={signup_link} target='_blank'>{signup_link}</a> : 'None'} </p>
+                                <p className='signup_link'>Sign Up Link: {signup_link && signup_link !== '' ? <a href={signup_link} target='_blank'>Link Here</a> : 'None'} </p>
                             </div>
                         </div>
                     </div>

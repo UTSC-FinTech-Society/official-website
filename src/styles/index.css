@@ -2345,7 +2345,6 @@ body {
 }
 .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
   width: 45.7vw;
-  height: 580px;
   background-color: white;
   padding: 50px 80px;
   position: relative;
@@ -2361,47 +2360,39 @@ body {
     padding: 50px 50px;
   }
 }
+@media (max-width: 1250px) {
+  .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
+    width: 540px;
+  }
+}
 @media (max-width: 1000px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
+    width: 55vw;
     padding: 30px 30px;
-    height: 520px;
   }
 }
 @media (max-width: 840px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 420px;
+    width: 60vw;
   }
 }
 @media (max-width: 800px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    height: 470px;
-    left: -50px;
     top: 110px;
     margin-bottom: 50px;
   }
 }
-@media (max-width: 750px) {
-  .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 390px;
-  }
-}
 @media (max-width: 700px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 350px;
+    width: 400px;
     top: 150px;
     margin-bottom: 70px;
   }
 }
-@media (max-width: 650px) {
-  .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 320px;
-  }
-}
 @media (max-width: 630px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 320px;
+    width: 380px;
     top: 180px;
-    left: -70px;
     margin-bottom: 100px;
   }
 }
@@ -2409,14 +2400,14 @@ body {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
     top: 200px;
     gap: 10px;
+    left: -90px;
   }
 }
 @media (max-width: 550px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 320px;
+    width: 350px;
     top: 230px;
     left: -120px;
-    height: 420px;
     margin-bottom: 140px;
   }
 }
@@ -2427,16 +2418,13 @@ body {
 }
 @media (max-width: 450px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 280px;
+    width: 300px;
     left: -115px;
-    height: 380px;
   }
 }
 @media (max-width: 400px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container {
-    width: 240px;
     left: -100px;
-    height: 340px;
     top: 200px;
     padding: 30px 20px;
   }
@@ -2487,7 +2475,7 @@ body {
   }
 }
 .container .event-details-page-container .event-details-section-container .event-details-container .details-container .description {
-  color: #636363;
+  color: black;
   font-size: 14px;
 }
 @media (max-width: 900px) {
@@ -2521,8 +2509,12 @@ body {
   }
 }
 .container .event-details-page-container .event-details-section-container .event-details-container .details-container .metadata-container p {
-  color: #636363;
+  color: black;
   font-size: 14px;
+  margin: 5px 0;
+}
+.container .event-details-page-container .event-details-section-container .event-details-container .details-container .metadata-container p a {
+  color: #0000EE;
 }
 @media (max-width: 900px) {
   .container .event-details-page-container .event-details-section-container .event-details-container .details-container .metadata-container p {
@@ -3037,9 +3029,10 @@ body {
   width: 100%;
   height: 100%;
   padding: 120px;
-  gap: 50px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width: 1020px) {
   .container .news-page-container .news-section-container .white-board .news-cards-list-container {
@@ -3054,7 +3047,6 @@ body {
 @media (max-width: 880px) {
   .container .news-page-container .news-section-container .white-board .news-cards-list-container {
     gap: 50px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 @media (max-width: 825px) {

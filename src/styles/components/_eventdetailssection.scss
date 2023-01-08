@@ -100,7 +100,6 @@
 
         .details-container {
             width: 45.7vw;
-            height: 580px;
             background-color: white;
             padding: 50px 80px;
             position: relative;
@@ -115,54 +114,46 @@
                 padding: 50px 50px;
             }
 
+            @include screen-control(1250px) {
+                width: 540px;
+            }
+
             @include screen-control(1000px) {
+                width: 55vw;
                 padding: 30px 30px;
-                height: 520px;
             }
 
             @include screen-control(840px) {
-                width: 420px;
-
+                width: 60vw;
             }
-            
+
             @include screen-control(800px) {
-                height: 470px;
-                left: -50px;
                 top: 110px;
                 margin-bottom: 50px;
             }
 
-            @include screen-control(750px) {
-                width: 390px;
-            }
-
             @include screen-control(700px) {
-                width: 350px;
+                width: 400px;
                 top: 150px;
                 margin-bottom: 70px;
             }
 
-            @include screen-control(650px) {
-                width: 320px;
-            }
-
             @include screen-control(630px) {
-                width: 320px;
+                width: 380px;
                 top: 180px;
-                left: -70px;
                 margin-bottom: 100px;
             }
 
             @include screen-control(600px) {
                 top: 200px;
                 gap: 10px;
+                left: -90px;
             }
 
             @include screen-control(550px) {
-                width: 320px;
+                width: 350px;
                 top: 230px;
                 left: -120px;
-                height: 420px;
                 margin-bottom: 140px;
             }
 
@@ -171,15 +162,12 @@
             }
 
             @include screen-control(450px) {
-                width: 280px;
+                width: 300px;
                 left: -115px;
-                height: 380px;
             }
 
             @include screen-control(400px) {
-                width: 240px;
                 left: -100px;
-                height: 340px;
                 top: 200px;
                 padding: 30px 20px;
             }
@@ -224,7 +212,7 @@
             }
 
             .description {
-                color: #636363;
+                color: black;
                 font-size: 14px;
 
                 @include screen-control(900px) {
@@ -258,8 +246,13 @@
                 }
 
                 p {
-                    color: #636363;
+                    color: black;
                     font-size: 14px;
+                    margin: 5px 0;
+
+                    a {
+                        color: #0000EE;
+                    }
 
                     @include screen-control(900px) {
                         font-size: 13px;
