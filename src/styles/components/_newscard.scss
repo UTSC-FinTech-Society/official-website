@@ -20,10 +20,15 @@
     }
 
     @include screen-height-control(500px) {
-        width: 250px;
+        width: 235px;
         height: 350px;
     }
-    
+
+    @include screen-control(400px) {
+        width: 235px;
+        height: 310px;
+    }
+
     .picture-container {
         width: 100%;
         height: 200px;
@@ -35,6 +40,10 @@
 
         @include screen-height-control(500px) {
             height: 160px;
+        }
+
+        @include screen-control(400px) {
+            height: 140px;
         }
 
         &::after {
@@ -51,7 +60,7 @@
 
         &:hover {
 
-            &::after { 
+            &::after {
                 opacity: 1;
             }
 
