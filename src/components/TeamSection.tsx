@@ -24,6 +24,7 @@ import RobertFung from '../assets/team/robert-fung.png';
 import AaravRoyChowdhury from '../assets/team/aarav-roy-chowdhury.jpg';
 import BrianNg from '../assets/team/brian-ng.jpg';
 import JessicaZhu from '../assets/team/jessica-zhu.jpeg';
+import MorrisHo from '../assets/team/morris-ho.jpg';
 import ArishaAhmed from '../assets/team/arisha-ahmed.jpg';
 import AmnaTariq from '../assets/team/amna-tariq.png';
 import SaumyaSoni from '../assets/team/saumya-soni.jpg';
@@ -62,7 +63,7 @@ const TeamSection: React.FC = () => {
                     <ExecutiveCard name='Omar El Oud' position='Director of Finance' profilePic={OmarElOud}  />
                     <ExecutiveCard name='Siddhi Surana Mahaveer' position='Director of Finance' profilePic={SiddhiSuranaMahaveer}  />
                     <ExecutiveCard name='Aman Vishwanath' position='Director of Business Development' profilePic={AmanVishwanath}  />
-                    <ExecutiveCard name='Katherine Chen' position='Director of Marketing' profilePic={KatherineChen}  />
+                    <ExecutiveCard name='Katherine Chen' position='Director of Finance' profilePic={KatherineChen}  />
                     <ExecutiveCard name='Niki Alizadeh Saghati' position='Director of Marketing' profilePic={NikiAlizadehSaghati}  />
                     <ExecutiveCard name='Jovita Au' position='Director of Marketing' profilePic={JovitaAu}  />
                 </TeamGroup>
@@ -75,6 +76,7 @@ const TeamSection: React.FC = () => {
                     <ExecutiveCard name='Jessica Zhu' position='Analyst' profilePic={JessicaZhu}  />
                 </TeamGroup>
                 <TeamGroup name='Associates' >
+                    <ExecutiveCard name='Morris Ho' position='Developer' profilePic={MorrisHo}  />
                     <ExecutiveCard name='Arisha Ahmed' position='Operations Associate' profilePic={ArishaAhmed}  />
                     <ExecutiveCard name='Amna Tariq' position='Finance Associate' profilePic={AmnaTariq}  />
                     <ExecutiveCard name='Saumya Soni' position='Business Development Associate' profilePic={SaumyaSoni}  />

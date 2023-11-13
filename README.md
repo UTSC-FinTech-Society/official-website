@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# FTS Offical Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Designed and developed by our amazing developers in the Tech team :)
 
-## Available Scripts
+## Run Guide
 
-In the project directory, you can run:
+1. Clone the repo locally in your computer
 
-### `npm start`
+   ```bash
+   git clone git@github.com:UTSC-FinTech-Society/official-website.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Navigate to the official website repo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ```bash
+   cd official-website
+   ```
 
-### `npm test`
+3. Install all the necessary dependencies with npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+4. Run the website locally and get to see all the amazing contents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment Guide
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. SSH into the remote DigitalOcean server (Note: ask VP of Tech to add your ssh key to DigitalOcean if you haven't do so yet)
 
-### `npm run eject`
+   ```bash
+   ssh utscfintech.ca
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Navigate to the official website repo and pull the latest main branch with git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd official-website
+   git pull
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Install all the necessary dependencies with npm
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+   In case it pops up an error showing heap space is exceeded, run the below command before installing packages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   export NODE_OPTIONS="--max-old-space-size=8192"
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Build our production project
+
+   ```bash
+   npm run build
+   ```
+
+5. Replace the contents of the folder /var/www/html with the contents of the build folder
+
+   ```bash
+   cp -a build/. /var/www/html/
+   ```

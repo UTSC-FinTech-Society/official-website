@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Logo from "../assets/utsc-fts-logo.png";
 
@@ -27,6 +27,7 @@ const ContactSection: React.FC = () => {
                         <a href='https://www.instagram.com/utscfintech/' target='_blank'><FaInstagram size='35px' /></a>
                         <a href='https://www.linkedin.com/company/utscfts' target='_blank'><FaLinkedin size='35px' /></a>
                         <a href='https://github.com/UTSC-FinTech-Society' target='_blank'><FaGithub size='35px' /></a>
+                        <a href='https://discord.gg/ANEnxS7up4' target='_blank'><FaDiscord size='35px' /></a>
                     </div>
                 </div>
             </div>
