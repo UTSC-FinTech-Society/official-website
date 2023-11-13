@@ -19,7 +19,7 @@ Designed and developed by our amazing developers in the Tech team :)
 3. Install all the necessary dependencies with npm
 
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 4. Run the website locally and get to see all the amazing contents
@@ -46,7 +46,7 @@ Designed and developed by our amazing developers in the Tech team :)
 3. Install all the necessary dependencies with npm
 
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
    In case it pops up an error showing heap space is exceeded, run the below command before installing packages
