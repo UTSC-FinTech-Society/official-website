@@ -49,16 +49,16 @@ Designed and developed by our amazing developers in the Tech team :)
    npm install --legacy-peer-deps
    ```
 
-   In case it pops up an error showing heap space is exceeded, run the below command before installing packages
-
-   ```bash
-   export NODE_OPTIONS="--max-old-space-size=8192"
-   ```
-
 4. Build our production project
 
    ```bash
    npm run build
+   ```
+
+   In case it pops up an error showing heap space is exceeded, run the below command before building project
+
+   ```bash
+   export NODE_OPTIONS="--max-old-space-size=8192"
    ```
 
 5. Replace the contents of the folder /var/www/html with the contents of the build folder
