@@ -33,7 +33,7 @@ Designed and developed by our amazing developers in the Tech team :)
 1. SSH into the remote DigitalOcean server (Note: ask VP of Tech to add your ssh key to DigitalOcean if you haven't do so yet)
 
    ```bash
-   ssh utscfintech.ca
+   ssh root@utscfintech.ca
    ```
 
 2. Navigate to the official website repo and pull the latest main branch with git
