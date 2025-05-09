@@ -40,7 +40,6 @@ const newsSlice = createSlice({
             state.isLoading = false;
         },
         [getAllNews.rejected.toString()]: (state: NewsState, action: PayloadAction<string>) => {
-            alert(action.payload);
             state.isLoading = false;
         }
     }

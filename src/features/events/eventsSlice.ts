@@ -40,7 +40,6 @@ const eventsSlice = createSlice({
             state.isLoading = false;
         },
         [getAllEvents.rejected.toString()]: (state: EventsState, action: PayloadAction<string>) => {
-            alert(action.payload);
             state.isLoading = false;
         }
     }
