@@ -9,12 +9,12 @@ import { getAllEvents } from '../features/events/eventsSlice';
 import { AppDispatch, RootState } from '../store';
 
 const Events: React.FC = () => {
-    const eventsList = useSelector((state: RootState) => state.events.eventsList);
+    // const eventsList = useSelector((state: RootState) => state.events.eventsList);
     const dispatch = useDispatch<AppDispatch>();
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        if (eventsList.length === 0) dispatch(getAllEvents());
+        // if (eventsList.length === 0) dispatch(getAllEvents());
     }, []);
 
     return (

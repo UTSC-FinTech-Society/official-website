@@ -25,12 +25,12 @@ const AboutSection: React.FC = () => {
                         </p>
                     </div>
                 </Fade>
-                <Fade bottom cascade>
+                {/* <Fade bottom cascade>
                     <div className="join-us-container">
                         <h3>Join Our Membership Now</h3>
                         <button onClick={() => navigate('/membership-form')}>Join Us</button>
                     </div>
-                </Fade>
+                </Fade> */}
             </div>
         </section>
     )

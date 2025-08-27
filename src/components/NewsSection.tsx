@@ -7,7 +7,7 @@ import NewsCard from './NewsCard';
 const Fade = require('react-reveal/Fade');
 
 const NewsSection = () => {
-    const { newsList, isLoading } = useSelector((state: RootState) => state.news);
+    // const { newsList, isLoading } = useSelector((state: RootState) => state.news);
     const whiteBoardRef = useRef<HTMLDivElement>(null);
 
     window.addEventListener('scroll', () => {
@@ -21,7 +21,8 @@ const NewsSection = () => {
             <div className="white-board" ref={whiteBoardRef} >
                 <Fade bottom cascade>
                     <div className="news-cards-list-container">
-                        {!isLoading ? newsList.length > 0 ? newsList.length === 1 ? newsList.map(news => <NewsCard key={news.news_id} single_card={true} {...news} />) : newsList.map(news => <NewsCard key={news.news_id} {...news} />) : <h3 className='coming-soon-text'>Coming Soon...</h3> : <Loading border='7px' size='50px' color='#040C43' />}   
+                        {/* {!isLoading ? newsList.length > 0 ? newsList.length === 1 ? newsList.map(news => <NewsCard key={news.news_id} single_card={true} {...news} />) : newsList.map(news => <NewsCard key={news.news_id} {...news} />) : <h3 className='coming-soon-text'>Coming Soon...</h3> : <Loading border='7px' size='50px' color='#040C43' />} */} 
+                        <h3 className='coming-soon-text'>Coming Soon...</h3>
                     </div>
                 </Fade>
             </div>

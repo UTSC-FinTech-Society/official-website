@@ -10,12 +10,12 @@ import { getAllNews } from '../features/news/newsSlice';
 
 const Home: React.FC = () => {
     const dispatch = useDispatch<AppDispatch>();
-    const state = useSelector((state: RootState) => state);
+    // const state = useSelector((state: RootState) => state);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        if (state.events.eventsList.length === 0) dispatch(getAllEvents());
-        if (state.news.newsList.length === 0) dispatch(getAllNews());
+        // if (state.events.eventsList.length === 0) dispatch(getAllEvents());
+        // if (state.news.newsList.length === 0) dispatch(getAllNews());
     }, []);
 
     return (

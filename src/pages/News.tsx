@@ -9,13 +9,13 @@ import { getAllNews } from '../features/news/newsSlice';
 import { AppDispatch, RootState } from '../store';
 
 const News: React.FC = () => {
-    const newsList = useSelector((state: RootState) => state.news.newsList);
+    // const newsList = useSelector((state: RootState) => state.news.newsList);
 
     const dispatch = useDispatch<AppDispatch>();
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        if (newsList.length === 0) dispatch(getAllNews());
+        // if (newsList.length === 0) dispatch(getAllNews());
     }, []);
 
     return (
