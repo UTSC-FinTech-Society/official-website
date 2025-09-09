@@ -12,7 +12,7 @@ const Team: React.FC = () => {
     return (
         <div className='team-page-container'>
             <NavBar />
-            <BackgroundSection descriptions={[{text: 'Meet the', color: '#f1f1f1'}, {text: '2022-2023 FTS Team', color: '#040C43'}]} bgImage={`linear-gradient(rgba(50,50,50,.5), rgba(50,50,50,.5)), url(${BuildingBackground})`} bgSize='100vw 60vh'  />
+            <BackgroundSection descriptions={[{text: 'Meet the', color: '#f1f1f1'}, {text: '2024-2025 FTS Team', color: '#040C43'}]} bgImage={`linear-gradient(rgba(50,50,50,.5), rgba(50,50,50,.5)), url(${BuildingBackground})`} bgSize='100vw 60vh'  />
             <TeamSection />
             <ContactSection />
         </div>
